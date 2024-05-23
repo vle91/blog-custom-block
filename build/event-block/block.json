@@ -1,0 +1,59 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gsublog/event-block",
+  "version": "0.1.0",
+  "title": "Event Block",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Event block displays event details.",
+  "example": {},
+  "attributes": {
+    "eventImageId": {
+      "type": "number"
+    },
+    "eventImageUrl": {
+      "type": "string"
+    },
+    "showEventDateTime": {
+      "type": "boolean",
+      "default": "true"
+    },
+    "eventDate": {
+      "type": "string"
+    },
+    "eventStartTime": {
+      "type": "string"
+    },
+    "eventEndTime": {
+      "type": "string"
+    },
+    "showEventLocation": {
+      "type": "boolean",
+      "default": "true"
+    },
+    "eventLocation": {
+      "type": "string"
+    },
+    "showRegisterLink": {
+      "type": "boolean",
+      "default": "true"
+    },
+    "eventRegisterLink": {
+      "type": "string"
+    },
+    "eventRegisterText": {
+      "type": "string",
+      "default": "Register"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "event-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

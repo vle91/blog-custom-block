@@ -1,0 +1,60 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+.event-block__fieldset {
+    margin-bottom: var(--wp--preset--spacing--20);
+}
+
+.event-block__label {
+    margin-bottom: var(--wp--preset--spacing--10);
+    text-transform: uppercase;
+    font-size: var(--wp--preset--font-size--xx-small);
+    font-weight: 500;
+}
+
+.btn {
+    display: inline-block;
+    padding: var(--wp--preset--spacing--10) var(--wp--preset--spacing--20);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    border: 1px solid var(--wp--preset--color--white);
+    background-color: var(--wp--preset--color--blue);
+    color: var(--wp--preset--color--white);
+    &:hover {
+        border: 1px solid var(--wp--preset--color--blue);
+        background-color: var(--wp--preset--color--white);
+        color: var(--wp--preset--color--blue);
+        text-decoration: none;
+    }   
+}
+
+.btn-primary__outline {
+    border: 1px solid var(--wp--preset--color--blue);
+    background-color: var(--wp--preset--color--white);
+    color: var(--wp--preset--color--blue);
+    &:hover {
+        border: 1px solid var(--wp--preset--color--white);
+        background-color: var(--wp--preset--color--blue);
+        color: var(--wp--preset--color--white);
+        text-decoration: none;
+    }
+}
+
+.btn-image {
+    padding: var(--wp--preset--spacing--00);
+    width: auto;
+    height: auto;
+    &:focus:not(:disabled)  {
+        outline: none;
+        box-shadow: none;
+    }
+}
